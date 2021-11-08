@@ -1,0 +1,6 @@
+wget
+pytest
+boto3
+moto
+pyspark
+chispa

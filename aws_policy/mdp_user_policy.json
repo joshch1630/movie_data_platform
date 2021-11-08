@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": ["s3:*"],
+      "Effect": "Allow",
+      "Resource": "${s3_bucket_arn}"
+    },
+    {
+      "Action": ["lambda:*"],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Action": ["glue:*"],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Action": ["cloudwatch:*", "logs:*"],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Action": ["athena:*"],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
